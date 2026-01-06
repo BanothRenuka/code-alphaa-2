@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Trading Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Stock Trading Platform</h1>
+
+    <div class="market">
+        <h2>Market Data</h2>
+        <p>Stock: <strong>ABC Corp</strong></p>
+        <p>Price: ₹<span id="stockPrice"></span></p>
+    </div>
+
+    <div class="trade">
+        <input type="number" id="quantity" placeholder="Quantity">
+        <button onclick="buyStock()">Buy</button>
+        <button onclick="sellStock()">Sell</button>
+    </div>
+
+    <div id="output" class="output">
+        <h2>Portfolio Summary</h2>
+        <p id="balance"></p>
+        <p id="shares"></p>
+        <p id="value"></p>
+
+        <h3>Transaction History</h3>
+        <ul id="history"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
